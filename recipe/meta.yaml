@@ -1,5 +1,5 @@
 {% set name = "ocaml-camlp5" %}
-{% set version = "712" %}
+{% set version = "7.12" %}
 
 package:
   name: {{ name|lower }}
