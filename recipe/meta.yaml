@@ -1,5 +1,5 @@
 {% set name = "ocaml-camlp5" %}
-{% set version = "7.07" %}
+{% set version = "713" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/camlp5/camlp5/archive/rel{{ version.replace(".", "") }}.tar.gz
-  sha256: a2c493b833b217adf94d2000eb19015b990c4e441beb35cf36b1d33ed2351991
+  sha256: 3b49a75c8dd9c9db9b4d1dae18687e3378c4fdbfcabeed163fbc658e7e47f862
   patches:
     - fix_where.diff
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Preprocessor / Pretty Printer for OCaml'
+  summary: Preprocessor / Pretty Printer for OCaml
   doc_url: https://camlp5.github.io/doc/htmlc/
   dev_url: https://github.com/camlp5/camlp5
 
