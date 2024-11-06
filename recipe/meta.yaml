@@ -1,5 +1,5 @@
 {% set name = "ocaml-camlp5" %}
-{% set version = "7.07" %}
+{% set version = "710" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/camlp5/camlp5/archive/rel{{ version.replace(".", "") }}.tar.gz
-  sha256: a2c493b833b217adf94d2000eb19015b990c4e441beb35cf36b1d33ed2351991
+  sha256: 83dff83d33ee9b70cd1b9d8d365db63a118201e5feb6aab49d9d3b1d62621784
   patches:
     - fix_where.diff
 
